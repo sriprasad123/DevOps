@@ -1,0 +1,26 @@
+1. Deployed many applications in ML Area
+Once the source code is ready, built the code, created the docker image and Deployed multiple applications in Vessel (In staging environment) such as:
+	Vessel Text extract
+	GMAIST
+	Vessel Batch Processor service -WIP
+	Vessel NLP
+	UK SMS Services
+Also, working on getting access to Rancher prod to deploy some of the services in Prod environment.
+
+2. Added custom functionalities for Kubernetes Deployments
+ Written python code for abstracting storage(S3) operations like list, upload, download, delete. To create abstraction for the developer to storage services.
+
+3. Managing Kubernetes Cluster using Python
+ Written the code using python to create and expose Kubernetes APIs which performs the operations like create, delete, list and update K8s objects without using Kubectl commands.
+This helps users(developers) to access K8s object from API level instead of platform level (to achieve platform abstraction).
+
+4. Microservices Deployments using Spinnaker
+
+5. Migration of Existing Services to Rancher 2.0
+  Post migration from Rancher 1.6 to Rancher 2.0, we have migrated by redeploying several applications on vessel in new Rancher
+  Recreated PV and PVC’s and assigned the persistence volumes to required applications/Services.
+
+6. Designing & Exposing API's for Vessel NLP
+  Vessel NLP is the service which was using AWS comprehend (for medical) service’s functionalities at the backend to detect some medical related characters/words in a bunch of English paragraphs. This helps to identify the patient’s medical history, treatment undergone, Medicine and dosage etc...,
+	We have Designed this flow, the requests and responses, implemented by proxying AWS comprehend functions using Python Flask and deployed the service in Vessel.
+
