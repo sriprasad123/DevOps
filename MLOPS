@@ -1,3 +1,5 @@
+MLOps is the process of unifying the  model development(dev) and model deployment(ops) to streamline the continuose delivery of high performance models in production.
+
 MLOps is the process of taking an experimental machine learning model into a production system.
 The word is a compound of “machine learning” and the continuous development practice of DevOps in the software field. 
 Machine learning models are tested and developed in isolated experimental systems. When an algorithm is ready to be launched.
@@ -16,12 +18,11 @@ Machine Learning systems can be categorized in eight different categories:
 
 There are a number of goals enterprises want to achieve through MLOps systems successfully implementing ML across the enterprise, including:[8]
 
-Deployment and automation[9]
-Reproducibility of models and predictions[10]
-Diagnostics[11] (wrong reference - repeated)
-Governance and regulatory compliance[12]
-Scalability[13]
-Collaboration[14]
-Business uses[15]
-Monitoring and management[16]
-
+Deployment and automation
+Reproducibility of models and predictions
+Diagnostics (wrong reference - repeated)
+Governance and regulatory compliance
+Scalability
+Collaboration
+Business uses
+Monitoring and management
