@@ -15,8 +15,8 @@ Machine Learning systems can be categorized in eight different categories:
 7. endpoint deployment
 8. endpoint monitoring
 
-
-There are a number of goals enterprises want to achieve through MLOps systems successfully implementing ML across the enterprise, including:[8]
+========================================================================================================================================================================
+There are a number of goals enterprises want to achieve through MLOps systems successfully implementing ML across the enterprise, including
 
 Deployment and automation
 Reproducibility of models and predictions
@@ -26,3 +26,87 @@ Scalability
 Collaboration
 Business uses
 Monitoring and management
+========================================================================================================================================================================
+Components of ML:
+1. Data
+2. ML Model
+3. Code
+
+========================================================================================================================================================================
+
+Principles of MLOPS:
+
+1. Automating the ML pipelines:
+  To automate complete ML workflow without manual intervention.
+  Things to automate: Calender events, messsaging, monitoring events, changes in data, model training code and app code
+
+  In MLOPS we have 3 levels of automation:
+    1. Manual model training and deployment
+    2. ML pipeline automation
+    3. CICD system to deploy, to automatically build ,test , deploy the data , ML model and ML training pipeline components.
+
+2. Continuos X(everything):
+  Continuose integration, deployment, Testing and Monitoring.
+
+3. Versioning:
+  Goal of versioning is to treat the ML Models, scripts and datasets with version control systems.
+  To keep the versions of the trained model with different datasets to maintain auditable and reproducible.
+
+4. Experiment tracking:
+  In ML, experiments should be make by running multiple experiments in parellel before making any decisions of which model should be promoted to preoduction.
+
+  Ways to achieve Experiment tracking:
+  Use different branches each dedicated to seperate experiments. the output of each branch is a trained model and can be determined based on the selected metric.
+        Can be achieved using GIT, weights and biasis library.      
+            
+5. Testing:       
+    The compelete development datapipeline includes 3 components:
+        - data pipeline
+        - ML model pipeline
+        - Application pipeline
+
+    so, we use 3 testing scopes:
+      - tests for features and data
+      - Model development: To test whether the models are aligned with business objectives.
+      - ML infrastructure
+    
+6. Monitoring:
+   Monitor to assure the ML models performs as expected.
+  
+7. Reproducibility:
+   Should produce identical results given the same input
+   In every phase of ML workflow i.e ML model processing, model training, model deployment should produce identical results given the same input.
+   
+========================================================================================================================================================================    
+  
+How MLOPS work:
+MLOPS follows similar patterns to DEVOPS(Practice that follows seemless integration between dev cycle and overall ops process, just like devops follows the process to shortens
+prod lifecycle by creating better prodducts in each iteration).MLOPS drives insights quickly using automation and Iteration models.
+MLOPS is the process of taking both code and data in order to produce prediction that prescribe which deployement into prediction.
+
+An ML model for production involves the following steps:
+- Data Extraction: Select and integrate relavant data from various source for the ML task.
+- Data Analysis: EDA(Exploratory Data Analysis) to understand the available data for building ML model.
+- Data Preperation: Prepare the data for your ML task EDA and data cleaning where you clean the data into train , 
+  validation and test sets.also apply data transformations and feature engineering to the model that solves the target task.
+- Model Training: 
+- Model Evolution
+- Model Validation
+- Serving and Monitoring
+
+The level of automation of the above model defines the maturity of ML process.It increases the velocity of training the new model.
+
+
+Advantage:
+- Rapid Innovation
+- Reproducible workflow
+- Easy Deployment
+- Higher precision
+- Effective management
+- ML resource management system and control
+
+
+
+
+
+
