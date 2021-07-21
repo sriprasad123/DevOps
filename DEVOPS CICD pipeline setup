@@ -1,0 +1,25 @@
+For Amazon linux:
+
+Link: https://www.edureka.co/blog/install-jenkins/
+
+Step 1: Install Java Version 8
+
+  Fedora, Oracle Linux, Red Hat Enterprise Linux, Amazon Linux
+     yum install java-1.8.0-openjdk
+
+  Debian, Ubuntu
+    sudo apt-get install openjdk-8-jre
+    
+Step 2: Install Apache Tomcat 9
+
+- sudo yum install wget
+
+- wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.0.M10/bin/apache-tomcat-9.0.0.M10.tar.gz
+
+- tar xzf apache-tomat-9.0.0.M10.tar.gz
+
+- 
+  
+ 
+
+
