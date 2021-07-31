@@ -1,5 +1,13 @@
+Docker:
+
 To install docker in amazon linux:
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+
+TO install docker-compose:
+https://docs.docker.com/compose/install/
+
+Check whether dockerfile and dockercompose working fine:
+https://docs.docker.com/compose/gettingstarted/
 
 To intall Jenkins container:
 https://medium.com/@schogini/running-docker-inside-and-outside-of-a-jenkins-container-along-with-docker-compose-a-tiny-c908c21557aa
