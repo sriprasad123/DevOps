@@ -71,3 +71,16 @@ Manages images.
 
 docker rmi
 docker rmi b750fe78269d
+
+
+4. docker volumes
+   https://docs.docker.com/storage/volumes/
+   Create and mange Volumes:
+      docker volume create my-vol
+      docker volume rm my-vol
+      docker run -d --name devtest -v myvol2:/app nginx:latest          # to start a container with volume attached
+
+  Share data among machines : https://docs.docker.com/storage/volumes/#share-data-among-machines
+  
+  
+       
