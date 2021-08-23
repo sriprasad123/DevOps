@@ -1,6 +1,6 @@
 Installation:
 Minikube: https://minikube.sigs.k8s.io/docs/start/
 Kubeadm: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
-
+k8s yaml: https://matthewpalmer.net/kubernetes-app-developer/articles/service-kubernetes-example-tutorial.html
 
 
