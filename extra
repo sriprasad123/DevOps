@@ -1,3 +1,6 @@
 sum(rate(container_cpu_usage_seconds_total{namespace="NAMESPACE", container_name!="POD", image!="", pod_name!="POD"}[5m])) by (pod_name)
 sum by (pod_name) (rate(container_cpu_usage_seconds_total{container_name!="POD", container_name!=""}[1m])) * 100
 
+
+avg by (pod_name) (irate(container_cpu_usage_seconds_total{container_name!="POD", container_name!=""}[1m])) * 100 > 60
+
