@@ -4,3 +4,5 @@ sum by (pod_name) (rate(container_cpu_usage_seconds_total{container_name!="POD",
 
 avg by (pod_name) (irate(container_cpu_usage_seconds_total{container_name!="POD", container_name!=""}[1m])) * 100 > 60
 
+avg(irate(container_cpu_usage_seconds_total{namespace="NAMESPACE", pod_name="POD_NAME"}[5m])) > 0.6
+sum by (namespace, pod) (rate(container_cpu_usage_seconds_total{namespace="<namespace>"}[5m])) / sum by (namespace, pod) (kube_pod_container_resource_limits_cpu_cores{namespace="<namespace>"}) * 100 > 60
